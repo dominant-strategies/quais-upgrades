@@ -1,5 +1,5 @@
-require('@openzeppelin/hardhat-upgrades');
-
+require('@nomicfoundation/hardhat-ethers');
+require('./dist/index.js');
 const override = {
   version: '0.8.10',
   settings: {
@@ -10,6 +10,14 @@ const override = {
 };
 
 module.exports = {
+  networks: {
+    // Your custom network name ("myRpc" in this example)
+    cyprus1: {
+      url: "https://rpc.quai.network/cyprus1",
+      chainId: 9000,
+    },
+    // ... add other networks if you want
+  },
   solidity: {
     compilers: [
       {
@@ -28,6 +36,13 @@ module.exports = {
         version: '0.5.17',
       },
     ],
+    settings: {
+      optimizer: {
+        enabled: true,
+      },
+      evmVersion: 'london',
+    },
+    evmVersion: 'london',
     overrides: {
       'contracts/GapV1.sol': override,
       'contracts/GapV2.sol': override,

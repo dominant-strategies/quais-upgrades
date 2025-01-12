@@ -1,13 +1,14 @@
 {
-  "name": "@openzeppelin/hardhat-upgrades",
-  "version": "3.8.0",
+  "name": "@quais/quais-upgrades",
+  "version": "3.8.1",
   "description": "",
   "repository": "https://github.com/OpenZeppelin/openzeppelin-upgrades/tree/master/packages/plugin-hardhat",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "/dist",
-    "/src"
+    "/src",
+    "/packages/plugin-hardhat/src/artifacts/"
   ],
   "bin": {
     "migrate-oz-cli-project": "dist/scripts/migrate-oz-cli-project.js"

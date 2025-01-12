@@ -179,7 +179,7 @@ export async function waitAndValidateDeployment(
   const { txHash, address, remoteDeploymentId } = deployment;
 
   // Poll for 60 seconds with a 5 second poll interval by default.
-  const pollTimeout = opts?.timeout ?? 60e3;
+  const pollTimeout = opts?.timeout ?? 120e3;
   const pollInterval = opts?.pollingInterval ?? 5e3;
 
   debug('polling timeout', pollTimeout, 'polling interval', pollInterval);

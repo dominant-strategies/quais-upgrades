@@ -1,4 +1,5 @@
-import type { ethers, ContractFactory } from 'ethers';
+import type { ContractFactory } from 'ethers';
+import * as ethers from 'ethers';
 import { CompilerInput, CompilerOutputContract, HardhatRuntimeEnvironment } from 'hardhat/types';
 
 import { parseFullyQualifiedName } from 'hardhat/utils/contract-names';
@@ -11,12 +12,12 @@ import {
 } from '@openzeppelin/defender-sdk-deploy-client';
 import { getContractNameAndRunValidation, UpgradesError } from '@openzeppelin/upgrades-core';
 
-import artifactsBuildInfo from '@openzeppelin/upgrades-core/artifacts/build-info-v5.json';
+import artifactsBuildInfo from '../artifacts/build-info-v5.json';
 
-import ERC1967Proxy from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/ERC1967/ERC1967Proxy.sol/ERC1967Proxy.json';
-import BeaconProxy from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/beacon/BeaconProxy.sol/BeaconProxy.json';
-import UpgradeableBeacon from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/beacon/UpgradeableBeacon.sol/UpgradeableBeacon.json';
-import TransparentUpgradeableProxy from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/transparent/TransparentUpgradeableProxy.sol/TransparentUpgradeableProxy.json';
+import ERC1967Proxy from '../artifacts/ERC1967Proxy.json';
+import BeaconProxy from '../artifacts/BeaconProxy.json';
+import UpgradeableBeacon from '../artifacts/UpgradeableBeacon.json';
+import TransparentUpgradeableProxy from '../artifacts/TransparentUpgradeableProxy.json';
 
 import { getNetwork, parseTxOverrides } from './utils';
 import { DefenderDeployOptions, UpgradeOptions, EthersDeployOptions, DefenderDeployment } from '../utils';

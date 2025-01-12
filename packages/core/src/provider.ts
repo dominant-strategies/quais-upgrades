@@ -12,6 +12,7 @@ export interface EthereumProvider {
   send(method: 'eth_getTransactionReceipt', params: [string]): Promise<null | EthereumTransactionReceipt>;
   send(method: string, params: unknown[]): Promise<unknown>;
 }
+import { quais } from "ethers";
 
 export interface HardhatMetadata {
   clientVersion: string;
@@ -87,13 +88,15 @@ export async function call(
   data: string,
   block = 'latest',
 ): Promise<string> {
-  return provider.send('eth_call', [
+  let customProvider =  new quais.JsonRpcProvider('https://rpc.quai.network', undefined, { usePathing: true })
+  return customProvider.send('eth_call', [
     {
       to: address,
       data: data,
     },
     block,
-  ]);
+  ], quais.Shard.Cyprus1);
+
 }
 
 export async function hasCode(provider: EthereumProvider, address: string, block?: string): Promise<boolean> {
@@ -151,16 +154,7 @@ export const networkNames: { [chainId in number]?: string } = Object.freeze({
 });
 
 export async function isDevelopmentNetwork(provider: EthereumProvider): Promise<boolean> {
-  const chainId = await getChainId(provider);
-  //  1337 => ganache and geth --dev
-  // 31337 => hardhat network
-  if (chainId === 1337 || chainId === 31337) {
-    return true;
-  } else {
-    const clientVersion = await getClientVersion(provider);
-    const [name] = clientVersion.split('/', 1);
-    return name === 'HardhatNetwork' || name === 'EthereumJS TestRPC' || name === 'anvil';
-  }
+  return false
 }
 
 export function isReceiptSuccessful(receipt: Pick<EthereumTransactionReceipt, 'status'>): boolean {

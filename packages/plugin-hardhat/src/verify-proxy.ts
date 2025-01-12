@@ -11,15 +11,15 @@ import {
   isEmptySlot,
   getCode,
 } from '@openzeppelin/upgrades-core';
-import artifactsBuildInfo from '@openzeppelin/upgrades-core/artifacts/build-info-v5.json';
+import artifactsBuildInfo from '../src/artifacts/build-info-v5.json';
 
 import { HardhatRuntimeEnvironment, RunSuperFunction } from 'hardhat/types';
 
-import ERC1967Proxy from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/ERC1967/ERC1967Proxy.sol/ERC1967Proxy.json';
-import BeaconProxy from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/beacon/BeaconProxy.sol/BeaconProxy.json';
-import UpgradeableBeacon from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/beacon/UpgradeableBeacon.sol/UpgradeableBeacon.json';
-import TransparentUpgradeableProxy from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/transparent/TransparentUpgradeableProxy.sol/TransparentUpgradeableProxy.json';
-import ProxyAdmin from '@openzeppelin/upgrades-core/artifacts/@openzeppelin/contracts-v5/proxy/transparent/ProxyAdmin.sol/ProxyAdmin.json';
+import ERC1967Proxy from '../src/artifacts/ERC1967Proxy.json';
+import BeaconProxy from '../src/artifacts/BeaconProxy.json';
+import UpgradeableBeacon from '../src/artifacts/UpgradeableBeacon.json';
+import TransparentUpgradeableProxy from '../src/artifacts/TransparentUpgradeableProxy.json';
+import ProxyAdmin from '../src/artifacts/ProxyAdmin.json';
 
 import { keccak256 } from 'ethereumjs-util';
 

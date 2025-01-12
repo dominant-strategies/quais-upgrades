@@ -23,7 +23,7 @@ const settings = {
 
 const settingsWithParisEVM = {
   ...settings,
-  evmVersion: 'paris',
+  evmVersion: 'london',
 };
 
 const proxyCompiler = {
@@ -50,9 +50,12 @@ function getNamespacedOverrides() {
  */
 module.exports = {
   networks: {
-    mainnet: {
-      url: 'https://cloudflare-eth.com',
+    // Your custom network name ("myRpc" in this example)
+    cyprus1: {
+      url: "https://rpc.quai.network/cyprus1",
+      chainId: 9000,
     },
+    // ... add other networks if you want
   },
   solidity: {
     compilers: [
@@ -63,6 +66,7 @@ module.exports = {
       { version: '0.8.9', settings },
       proxyCompiler,
     ],
+    evmVersion: 'london',
     overrides: getNamespacedOverrides(),
   },
   etherscan: {

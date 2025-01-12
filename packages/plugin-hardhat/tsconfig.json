@@ -8,7 +8,17 @@
     "skipLibCheck": true,
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "src/artifacts/**/*",
+  ],
+  "files": [
+    "src/artifacts/ERC1967Proxy.json",
+    "src/artifacts/BeaconProxy.json",
+    "src/artifacts/TransparentUpgradeableProxy.json",
+    "src/artifacts/UpgradeableBeacon.json",
+    "src/artifacts/ProxyAdmin.json",
+    "src/artifacts/ITransparentUpgradeableProxy.json",
+    "src/artifacts/build-info-v5.json",
   ],
   "references": [
     { "path": "../core" }

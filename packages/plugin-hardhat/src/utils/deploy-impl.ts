@@ -9,7 +9,8 @@ import {
   ValidationOptions,
   Version,
 } from '@openzeppelin/upgrades-core';
-import type { ContractFactory, ethers } from 'ethers';
+import type { ContractFactory } from 'ethers';
+import * as ethers from 'ethers';
 import type { EthereumProvider, HardhatRuntimeEnvironment } from 'hardhat/types';
 import { deploy } from './deploy';
 import { GetTxResponse, DefenderDeployOptions, StandaloneOptions, UpgradeOptions, withDefaults } from './options';

@@ -202,23 +202,7 @@ export async function waitForDeployment(
 }
 
 export function parseTxOverrides(overrides?: Overrides): TxOverrides | undefined {
-  if (!overrides) {
     return undefined;
-  }
-  if (
-    typeof overrides.gasLimit === 'bigint' ||
-    typeof overrides.gasPrice === 'bigint' ||
-    typeof overrides.maxFeePerGas === 'bigint' ||
-    typeof overrides.maxPriorityFeePerGas === 'bigint'
-  ) {
-    throw new Error('bigint not yet supported');
-  }
-  return {
-    gasLimit: parseNumberOrUndefined(overrides.gasLimit),
-    gasPrice: parseHexOrUndefined(overrides.gasPrice),
-    maxFeePerGas: parseHexOrUndefined(overrides.maxFeePerGas),
-    maxPriorityFeePerGas: parseHexOrUndefined(overrides.maxPriorityFeePerGas),
-  };
 }
 
 function parseHexOrUndefined(value?: string | number | null): string | undefined {

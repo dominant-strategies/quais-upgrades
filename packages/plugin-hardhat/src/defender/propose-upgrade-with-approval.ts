@@ -5,7 +5,8 @@ import {
   isBeaconProxy,
   isTransparentProxy,
 } from '@openzeppelin/upgrades-core';
-import { ContractFactory, ethers } from 'ethers';
+import { ContractFactory } from 'ethers';
+import * as ethers from 'ethers';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DefenderDeployOptions, UpgradeOptions } from '../utils';
 import { getNetwork, enableDefender } from './utils';

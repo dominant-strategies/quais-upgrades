@@ -1,8 +1,8 @@
 {
-  "name": "@openzeppelin/upgrades-core",
-  "version": "1.41.0",
+  "name": "@quais/quais-upgrades-core",
+  "version": "1.41.1",
   "description": "",
-  "repository": "https://github.com/OpenZeppelin/openzeppelin-upgrades/tree/master/packages/core",
+  "repository": "https://github.com/dominant-strategies/quais-upgrades/tree/master/packages/core",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -26,7 +26,8 @@
     "/artifacts/@openzeppelin/contracts-v5/proxy/transparent/ProxyAdmin.sol/ProxyAdmin.json",
     "/artifacts/@openzeppelin/contracts-v5/proxy/transparent/TransparentUpgradeableProxy.sol/TransparentUpgradeableProxy.json",
     "/artifacts/@openzeppelin/contracts-v5/proxy/transparent/TransparentUpgradeableProxy.sol/ITransparentUpgradeableProxy.json",
-    "/artifacts/build-info-v5.json"
+    "/artifacts/build-info-v5.json",
+    "/packages/plugin-hardhat/src/artifacts/BeaconProxy.json"
   ],
   "scripts": {
     "clean": "hardhat clean && rimraf dist *.tsbuildinfo",
