@@ -10,7 +10,7 @@ import {
   DeployBeaconProxyKindError,
   UpgradesError,
   RemoteDeploymentId,
-} from '@openzeppelin/upgrades-core';
+} from '@quai/quais-upgrades-core';
 
 import {
   DeployBeaconProxyOptions,

@@ -112,7 +112,7 @@
 
 ## 1.5.1 (2021-04-14)
 
-- Add support for new `unsafeAllow` option in `@openzeppelin/upgrades-core`.
+- Add support for new `unsafeAllow` option in `@quai/quais-upgrades-core`.
 
 ## 1.5.0 (2021-01-27)
 

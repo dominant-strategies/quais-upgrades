@@ -10,7 +10,7 @@ import {
   InitialOwnerUnsupportedKindError,
   UpgradesError,
   inferProxyAdmin,
-} from '@openzeppelin/upgrades-core';
+} from '@quai/quais-upgrades-core';
 
 import {
   DeployProxyOptions,

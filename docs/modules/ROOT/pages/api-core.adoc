@@ -1,6 +1,6 @@
 = OpenZeppelin Upgrades Core & CLI
 
-The `@openzeppelin/upgrades-core` package provides a `validate` command to check for upgrade safety and storage layout compatibility in upgradeable contracts.  It can be used throughout your development process to ensure that your contracts are upgrade safe and compatible with previous versions.
+The `@quai/quais-upgrades-core` package provides a `validate` command to check for upgrade safety and storage layout compatibility in upgradeable contracts.  It can be used throughout your development process to ensure that your contracts are upgrade safe and compatible with previous versions.
 
 It also provides APIs to perform these checks programmatically, and contains the core logic for these checks to be performed with the OpenZeppelin Upgrades plugins.
 
@@ -101,11 +101,11 @@ forge clean && forge build
 
 === Usage
 
-After performing the prerequisites, run the `npx @openzeppelin/upgrades-core validate` command to validate your contracts:
+After performing the prerequisites, run the `npx @quai/quais-upgrades-core validate` command to validate your contracts:
 
 [source,bash]
 ----
-npx @openzeppelin/upgrades-core validate [<BUILD_INFO_DIR>] [<OPTIONS>]
+npx @quai/quais-upgrades-core validate [<BUILD_INFO_DIR>] [<OPTIONS>]
 ----
 
 If any errors are found, the command will exit with a non-zero exit code and print a detailed report of the errors to the console.
@@ -140,7 +140,7 @@ Import the `validateUpgradeSafety` function:
 
 [source,ts]
 ----
-import { validateUpgradeSafety } from '@openzeppelin/upgrades-core';
+import { validateUpgradeSafety } from '@quai/quais-upgrades-core';
 ----
 
 Then call the function to validate your contracts and get a project report with the validation results.
@@ -218,7 +218,7 @@ Import the `UpgradeableContract` class:
 
 [source,ts]
 ----
-import { UpgradeableContract } from '@openzeppelin/upgrades-core';
+import { UpgradeableContract } from '@quai/quais-upgrades-core';
 ----
 
 Then create an instance of `UpgradeableContract` for each implementation contract that you want to validate, and call `.getErrorReport()` and/or `.getStorageLayoutReport()` on it to get the upgrade safety and storage layout reports, respectively.

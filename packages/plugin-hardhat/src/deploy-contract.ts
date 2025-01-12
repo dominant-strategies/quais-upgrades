@@ -11,7 +11,7 @@ import {
   inferInitializable,
   Deployment,
   RemoteDeploymentId,
-} from '@openzeppelin/upgrades-core';
+} from '@quai/quais-upgrades-core';
 import { getContractInstance } from './utils/contract-instance';
 import { ContractTypeOfFactory } from './type-extensions';
 

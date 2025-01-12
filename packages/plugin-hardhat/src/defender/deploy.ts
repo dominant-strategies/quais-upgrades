@@ -10,7 +10,7 @@ import {
   DeployContractRequest,
   DeployRequestLibraries,
 } from '@openzeppelin/defender-sdk-deploy-client';
-import { getContractNameAndRunValidation, UpgradesError } from '@openzeppelin/upgrades-core';
+import { getContractNameAndRunValidation, UpgradesError } from '@quai/quais-upgrades-core';
 
 import artifactsBuildInfo from '../artifacts/build-info-v5.json';
 
@@ -23,7 +23,7 @@ import { getNetwork, parseTxOverrides } from './utils';
 import { DefenderDeployOptions, UpgradeOptions, EthersDeployOptions, DefenderDeployment } from '../utils';
 import debug from '../utils/debug';
 import { getDeployData } from '../utils/deploy-impl';
-import { ContractSourceNotFoundError } from '@openzeppelin/upgrades-core';
+import { ContractSourceNotFoundError } from '@quai/quais-upgrades-core';
 import { getDeployClient } from './client';
 
 const deployableProxyContracts = [ERC1967Proxy, BeaconProxy, UpgradeableBeacon, TransparentUpgradeableProxy];

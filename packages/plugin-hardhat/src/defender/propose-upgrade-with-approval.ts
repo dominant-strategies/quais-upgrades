@@ -4,7 +4,7 @@ import {
   getImplementationAddress,
   isBeaconProxy,
   isTransparentProxy,
-} from '@openzeppelin/upgrades-core';
+} from '@quai/quais-upgrades-core';
 import { ContractFactory } from 'ethers';
 import * as ethers from 'ethers';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';

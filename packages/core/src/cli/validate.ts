@@ -5,7 +5,7 @@ import { ValidationError, errorKinds } from '../validate/run';
 import debug from '../utils/debug';
 import { withCliDefaults } from './validate/validate-upgrade-safety';
 
-const USAGE = 'Usage: npx @openzeppelin/upgrades-core validate [<BUILD_INFO_DIR>] [<OPTIONS>]';
+const USAGE = 'Usage: npx @quai/quais-upgrades-core validate [<BUILD_INFO_DIR>] [<OPTIONS>]';
 const DETAILS = `
 Detects upgradeable contracts from a build info directory and validates whether they are upgrade safe.
 

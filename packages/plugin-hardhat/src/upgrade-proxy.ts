@@ -2,7 +2,7 @@ import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import type { ContractFactory, Signer } from 'ethers';
 import * as ethers from 'ethers';
 import debug from './utils/debug';
-import { getAdminAddress, getCode, getUpgradeInterfaceVersion, isEmptySlot } from '@openzeppelin/upgrades-core';
+import { getAdminAddress, getCode, getUpgradeInterfaceVersion, isEmptySlot } from '@quai/quais-upgrades-core';
 
 import {
   UpgradeProxyOptions,

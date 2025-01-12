@@ -10,7 +10,7 @@ import {
   isBeaconProxy,
   isEmptySlot,
   getCode,
-} from '@openzeppelin/upgrades-core';
+} from '@quai/quais-upgrades-core';
 import artifactsBuildInfo from '../src/artifacts/build-info-v5.json';
 
 import { HardhatRuntimeEnvironment, RunSuperFunction } from 'hardhat/types';

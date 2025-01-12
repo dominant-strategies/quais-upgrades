@@ -96,7 +96,7 @@
 
 ## 2.4.3 (2023-11-28)
 
-- Bump dependency on `@openzeppelin/upgrades-core`. ([#930](https://github.com/OpenZeppelin/openzeppelin-upgrades/pull/930))
+- Bump dependency on `@quai/quais-upgrades-core`. ([#930](https://github.com/OpenZeppelin/openzeppelin-upgrades/pull/930))
 
 ## 2.4.2 (2023-11-28)
 

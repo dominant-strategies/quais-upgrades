@@ -1,4 +1,4 @@
-import type { Deployment, RemoteDeploymentId } from '@openzeppelin/upgrades-core';
+import type { Deployment, RemoteDeploymentId } from '@quai/quais-upgrades-core';
 import type { ContractFactory, ContractMethodArgs } from 'ethers';
 import * as ethers from 'ethers';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';

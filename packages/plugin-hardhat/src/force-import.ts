@@ -15,7 +15,7 @@ import {
   getAdminAddress,
   isEmptySlot,
   UpgradesError,
-} from '@openzeppelin/upgrades-core';
+} from '@quai/quais-upgrades-core';
 
 import {
   simulateDeployImpl,

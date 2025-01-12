@@ -1,8 +1,8 @@
 {
-  "name": "@quais/quais-upgrades",
-  "version": "3.8.1",
+  "name": "@quai/quais-upgrades",
+  "version": "3.8.2",
   "description": "",
-  "repository": "https://github.com/OpenZeppelin/openzeppelin-upgrades/tree/master/packages/plugin-hardhat",
+  "repository": "https://github.com/dominant-strategies/quais-upgrades/tree/master/packages/plugin-hardhat",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -39,7 +39,7 @@
     "@openzeppelin/defender-sdk-base-client": "^1.14.4",
     "@openzeppelin/defender-sdk-deploy-client": "^1.14.4",
     "@openzeppelin/defender-sdk-network-client": "^1.14.4",
-    "@openzeppelin/upgrades-core": "^1.41.0",
+    "@quai/quais-upgrades-core": "^1.41.0",
     "chalk": "^4.1.0",
     "debug": "^4.1.1",
     "ethereumjs-util": "^7.1.5",
