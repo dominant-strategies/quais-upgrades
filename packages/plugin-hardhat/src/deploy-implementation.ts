@@ -1,6 +1,6 @@
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
-import type { ContractFactory } from 'ethers';
-import * as ethers from 'ethers';
+import type { ContractFactory } from 'quais';
+import * as ethers from 'quais';
 import { DeployImplementationOptions } from './utils';
 import { deployUpgradeableImpl } from './utils/deploy-impl';
 import { enableDefender } from './defender/utils';

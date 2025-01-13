@@ -1,4 +1,4 @@
-import { Contract, Signer } from 'ethers';
+import { Contract, Signer } from 'quais';
 
 import ITransparentUpgradeableProxyV5 from '../artifacts/ITransparentUpgradeableProxy.json';
 import ITransparentUpgradeableProxyV4 from '@quai/quais-upgrades-core/artifacts/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol/ITransparentUpgradeableProxy.json';

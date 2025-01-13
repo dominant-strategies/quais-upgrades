@@ -1,5 +1,5 @@
-import { ContractFactory, Signer } from 'ethers';
-import * as ethers from 'ethers';
+import { ContractFactory, Signer } from 'quais';
+import * as ethers from 'quais';
 
 import ERC1967Proxy from '../artifacts/ERC1967Proxy.json';
 import BeaconProxy from '../artifacts/BeaconProxy.json';

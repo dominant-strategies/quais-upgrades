@@ -6,7 +6,7 @@ import {
   ValidationOptions,
   withValidationDefaults,
 } from '@quai/quais-upgrades-core';
-import { ContractFactory, Overrides } from 'ethers';
+import { ContractFactory, Overrides } from 'quais';
 import { EthersOrDefenderDeployment } from './deploy';
 
 /**

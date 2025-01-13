@@ -1,4 +1,4 @@
-import { Contract, ContractFactory, ContractRunner, Signer } from 'ethers';
+import { Contract, ContractFactory, ContractRunner, Signer } from 'quais';
 
 /**
  * Attaches a ContractFactory to an address and returns a Contract instance.

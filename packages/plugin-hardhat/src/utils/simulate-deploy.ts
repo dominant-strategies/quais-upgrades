@@ -1,5 +1,5 @@
 import { fetchOrDeploy } from '@quai/quais-upgrades-core';
-import type { ContractFactory } from 'ethers';
+import type { ContractFactory } from 'quais';
 import type { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { getDeployData } from './deploy-impl';
 import { UpgradeOptions } from './options';

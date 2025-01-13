@@ -19,6 +19,7 @@ const settings = {
       '*': ['storageLayout'],
     },
   },
+  evmVersion: 'london',
 };
 
 const settingsWithParisEVM = {

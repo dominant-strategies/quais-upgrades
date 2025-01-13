@@ -1,5 +1,5 @@
-import type { ContractFactory } from 'ethers';
-import * as ethers from 'ethers';
+import type { ContractFactory } from 'quais';
+import * as ethers from 'quais';
 import { CompilerInput, CompilerOutputContract, HardhatRuntimeEnvironment } from 'hardhat/types';
 
 import { parseFullyQualifiedName } from 'hardhat/utils/contract-names';

@@ -1,5 +1,5 @@
 import type { HardhatRuntimeEnvironment } from 'hardhat/types';
-import { ContractFactory } from 'ethers';
+import { ContractFactory } from 'quais';
 
 import {
   Manifest,

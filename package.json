@@ -1,7 +1,7 @@
 {
   "name": "quais-upgrades",
   "version": "3.8.1",
-  "private": false,
+  "private": true,
   "license": "MIT",
   "scripts": {
     "docs": "bash scripts/prepare-foundry-docs.sh && oz-docs",
@@ -20,11 +20,12 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-unicorn": "^51.0.0",
-    "ethers": "npm:quais@^1.0.0-alpha.33",
+    "quais": "^1.0.0-alpha.33",
     "nyc": "^17.0.0",
     "prettier": "^3.0.0",
     "typescript": "^5.0.0",
-    "wsrun": "^5.2.4"
+    "wsrun": "^5.2.4",
+    "ethers": "npm:quais@^1.0.0-alpha.33"
   },
   "workspaces": {
     "packages": [

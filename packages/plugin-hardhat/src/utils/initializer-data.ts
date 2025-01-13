@@ -1,5 +1,5 @@
 import { UpgradesError } from '@quai/quais-upgrades-core';
-import { Interface } from 'ethers';
+import { Interface } from 'quais';
 
 export function getInitializerData(
   contractInterface: Interface,

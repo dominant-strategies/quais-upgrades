@@ -1,5 +1,5 @@
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
-import { ContractFactory } from 'ethers';
+import { ContractFactory } from 'quais';
 
 import { ContractAddressOrInstance, getContractAddress } from './utils';
 import {

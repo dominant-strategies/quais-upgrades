@@ -1,6 +1,6 @@
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
-import type { ContractFactory, Signer } from 'ethers';
-import * as ethers from 'ethers';
+import type { ContractFactory, Signer } from 'quais';
+import * as ethers from 'quais';
 import debug from './utils/debug';
 import { getAdminAddress, getCode, getUpgradeInterfaceVersion, isEmptySlot } from '@quai/quais-upgrades-core';
 

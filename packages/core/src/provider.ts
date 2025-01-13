@@ -12,7 +12,7 @@ export interface EthereumProvider {
   send(method: 'eth_getTransactionReceipt', params: [string]): Promise<null | EthereumTransactionReceipt>;
   send(method: string, params: unknown[]): Promise<unknown>;
 }
-import { quais } from "ethers";
+import { JsonRpcProvider, Shard } from "quais";
 
 export interface HardhatMetadata {
   clientVersion: string;
@@ -88,14 +88,14 @@ export async function call(
   data: string,
   block = 'latest',
 ): Promise<string> {
-  let customProvider =  new quais.JsonRpcProvider('https://rpc.quai.network', undefined, { usePathing: true })
+  let customProvider =  new JsonRpcProvider('https://rpc.quai.network', undefined, { usePathing: true })
   return customProvider.send('eth_call', [
     {
       to: address,
       data: data,
     },
     block,
-  ], quais.Shard.Cyprus1);
+  ], Shard.Cyprus1);
 
 }
 

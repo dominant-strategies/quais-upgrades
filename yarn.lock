@@ -4643,6 +4643,22 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.1.tgz#027422e2faec0b25e1549c3e1bd8309b9133b6e5"
   integrity sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==
 
+quais@^1.0.0-alpha.33:
+  version "1.0.0-alpha.33"
+  resolved "https://registry.yarnpkg.com/quais/-/quais-1.0.0-alpha.33.tgz#16f818061ec438e2e7322f993b69d3a926817bc1"
+  integrity sha512-icgOAX3rJU07tFBehpjzUnZagZe/umXzY7eEgqIQYsGCptIUnT92s0naH4XgEmF5j/hv/T9D4xMdIR5dI5yA7Q==
+  dependencies:
+    "@bitcoinerlab/secp256k1" "^1.1.1"
+    "@brandonblack/musig" "^0.0.1-alpha.1"
+    "@noble/curves" "1.2.0"
+    "@noble/hashes" "1.3.2"
+    "@scure/base" "^1.1.9"
+    aes-js "4.0.0-beta.5"
+    dotenv "^16.4.1"
+    google-protobuf "^3.21.4"
+    tslib "^2.6.2"
+    ws "^8.17.1"
+
 queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"

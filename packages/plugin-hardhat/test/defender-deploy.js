@@ -12,7 +12,7 @@ const {
 } = require('../dist/utils/factories');
 const artifactsBuildInfo = require('@quai/quais-upgrades-core/artifacts/build-info-v5.json');
 
-const { AbiCoder } = require('ethers');
+const { AbiCoder } = require('quais');
 
 const TX_HASH = '0x1';
 const DEPLOYMENT_ID = 'abc';

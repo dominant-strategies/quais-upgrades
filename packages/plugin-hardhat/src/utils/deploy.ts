@@ -1,6 +1,6 @@
 import type { Deployment, RemoteDeploymentId } from '@quai/quais-upgrades-core';
-import type { ContractFactory, ContractMethodArgs } from 'ethers';
-import * as ethers from 'ethers';
+import type { ContractFactory, ContractMethodArgs } from 'quais';
+import * as ethers from 'quais';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { defenderDeploy } from '../defender/deploy';
 import { EthersDeployOptions, DefenderDeployOptions, UpgradeOptions } from './options';

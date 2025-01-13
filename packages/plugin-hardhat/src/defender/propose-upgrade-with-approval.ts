@@ -5,8 +5,8 @@ import {
   isBeaconProxy,
   isTransparentProxy,
 } from '@quai/quais-upgrades-core';
-import { ContractFactory } from 'ethers';
-import * as ethers from 'ethers';
+import { ContractFactory } from 'quais';
+import * as ethers from 'quais';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { DefenderDeployOptions, UpgradeOptions } from '../utils';
 import { getNetwork, enableDefender } from './utils';

@@ -1,5 +1,5 @@
 import type { HardhatRuntimeEnvironment } from 'hardhat/types';
-import type { ContractFactory, Contract } from 'ethers';
+import type { ContractFactory, Contract } from 'quais';
 
 import { Deployment } from '@quai/quais-upgrades-core';
 

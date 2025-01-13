@@ -1,4 +1,4 @@
-import { Signer } from 'ethers';
+import { Signer } from 'quais';
 import { InitialOwner } from './options';
 import { UpgradesError } from '@quai/quais-upgrades-core';
 

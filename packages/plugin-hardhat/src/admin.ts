@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import type { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { Manifest, getAdminAddress } from '@quai/quais-upgrades-core';
-import { Contract, Signer } from 'ethers';
+import { Contract, Signer } from 'quais';
 import { EthersDeployOptions, attachProxyAdminV4 } from './utils';
 import { disableDefender } from './defender/utils';
 

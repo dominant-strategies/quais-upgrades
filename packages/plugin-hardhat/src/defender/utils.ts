@@ -14,7 +14,7 @@ import { TxOverrides } from '@openzeppelin/defender-sdk-deploy-client';
 import { HardhatDefenderConfig } from '../type-extensions';
 import { DefenderDeploy } from '../utils';
 import debug from '../utils/debug';
-import { Overrides } from 'ethers';
+import { Overrides } from 'quais';
 
 import { promisify } from 'util';
 import { getDeployClient, getNetworkClient } from './client';

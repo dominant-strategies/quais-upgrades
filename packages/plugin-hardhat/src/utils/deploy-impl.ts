@@ -9,8 +9,8 @@ import {
   ValidationOptions,
   Version,
 } from '@quai/quais-upgrades-core';
-import type { ContractFactory } from 'ethers';
-import * as ethers from 'ethers';
+import type { ContractFactory } from 'quais';
+import * as ethers from 'quais';
 import type { EthereumProvider, HardhatRuntimeEnvironment } from 'hardhat/types';
 import { deploy } from './deploy';
 import { GetTxResponse, DefenderDeployOptions, StandaloneOptions, UpgradeOptions, withDefaults } from './options';

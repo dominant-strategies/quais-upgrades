@@ -2,7 +2,7 @@ import 'hardhat/types/runtime';
 import 'hardhat/types/config';
 
 import type { HardhatUpgrades, DefenderHardhatUpgrades } from '.';
-import { ContractFactory } from 'ethers';
+import { ContractFactory } from 'quais';
 
 export type ContractTypeOfFactory<F extends ContractFactory> = ReturnType<F['attach']> & ReturnType<F['deploy']>;
 
