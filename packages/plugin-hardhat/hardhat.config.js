@@ -1,4 +1,5 @@
 require('@nomicfoundation/hardhat-ethers');
+require('@quai/hardhat-deploy-metadata');
 require('./dist/index.js');
 const override = {
   version: '0.8.10',
@@ -13,8 +14,8 @@ module.exports = {
   networks: {
     // Your custom network name ("myRpc" in this example)
     cyprus1: {
-      url: "https://rpc.quai.network/cyprus1",
-      chainId: 9000,
+      url: "https://rpc.orchard.quai.network/cyprus1",
+      chainId: 15000,
     },
     // ... add other networks if you want
   },

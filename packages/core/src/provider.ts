@@ -88,7 +88,7 @@ export async function call(
   data: string,
   block = 'latest',
 ): Promise<string> {
-  let customProvider =  new JsonRpcProvider('https://rpc.quai.network', undefined, { usePathing: true })
+  let customProvider =  new JsonRpcProvider('https://rpc.orchard.quai.network', undefined, { usePathing: true })
   return customProvider.send('eth_call', [
     {
       to: address,

@@ -19,7 +19,6 @@ const settings = {
       '*': ['storageLayout'],
     },
   },
-  evmVersion: 'london',
 };
 
 const settingsWithParisEVM = {
@@ -53,8 +52,8 @@ module.exports = {
   networks: {
     // Your custom network name ("myRpc" in this example)
     cyprus1: {
-      url: "https://rpc.quai.network/cyprus1",
-      chainId: 9000,
+      url: "https://rpc.orchard.quai.network/cyprus1",
+      chainId: 15000,
     },
     // ... add other networks if you want
   },

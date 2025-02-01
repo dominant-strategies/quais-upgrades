@@ -1,6 +1,6 @@
 {
   "name": "@quai/quais-upgrades-core",
-  "version": "1.41.2",
+  "version": "1.41.4",
   "description": "",
   "publishConfig": {
     "access": "public"
@@ -60,7 +60,7 @@
     "ava": "^6.0.0",
     "dotenv": "^16.0.0",
     "fgbg": "^0.1.4",
-    "hardhat": "^2.19.1",
+    "hardhat": "^2.22.5",
     "rimraf": "^5.0.0",
     "typescript": "^5.0.0"
   },

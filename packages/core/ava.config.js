@@ -1,3 +1,5 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 module.exports = {
   workerThreads: false, // required because of chdir in tests
   watchMode: {
