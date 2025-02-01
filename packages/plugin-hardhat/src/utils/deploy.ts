@@ -4,6 +4,7 @@ import * as ethers from 'quais';
 import { HardhatRuntimeEnvironment } from 'hardhat/types';
 import { defenderDeploy } from '../defender/deploy';
 import { EthersDeployOptions, DefenderDeployOptions, UpgradeOptions } from './options';
+const { deployMetadata } = require("hardhat")
 
 export interface DeployTransaction {
   deployTransaction?: ethers.TransactionResponse;
@@ -26,14 +27,19 @@ export async function deploy(
     if (opts.txOverrides !== undefined) {
       args.push(opts.txOverrides);
     }
-    return await ethersDeploy(factory, ...args);
+    // @ts-ignore
+    const ipfsHash = hre.pushMetadataToIPFSWithBytecode(factory.bytecode)
+    console.log("ipfsHash", ipfsHash)
+    return await ethersDeploy(factory, ipfsHash, ...args);
   }
 }
 
 async function ethersDeploy(
   factory: ContractFactory,
+  IPFSHash: string,
   ...args: ContractMethodArgs<unknown[]>
 ): Promise<EthersDeployment> {
+  factory.setIPFSHash(IPFSHash);
   const contractInstance = await factory.deploy(...args);
 
   const deployTransaction = contractInstance.deploymentTransaction();
