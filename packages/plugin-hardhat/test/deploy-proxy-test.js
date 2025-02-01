@@ -6,8 +6,8 @@ const BoxV2 = require("../artifacts/contracts/BoxV2.sol/Box2.json");
 describe("deployProxy function", function () {
   it("deploys a Box contract and initializes it to 42", async function () {
 
-    const provider =  new quais.JsonRpcProvider('https://rpc.quai.network', undefined, { usePathing: true })
-    const signer = new quais.Wallet("", provider)
+    const provider =  new quais.JsonRpcProvider('https://rpc.orchard.quai.network', undefined, { usePathing: true })
+    const signer = new quais.Wallet("0x5eec99c44ec18c4b9e7136e259b58fa4879db568ff20245011de1f77af306e72", provider)
     let nonce = await provider.getTransactionCount(signer.address)
     console.log('Nonce: ', nonce)
     let balance = await provider.getBalance(signer.address)
